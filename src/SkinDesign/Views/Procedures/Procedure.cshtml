@@ -1,0 +1,18 @@
+﻿@model Procedure
+
+@{ 
+    ViewBag.Title = "Procedure";
+}
+
+<section class="panel panel-default">
+    <h3 class="panel-heading">@Model.Name</h3>
+    <div class="panel-body">@Model.Description</div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="panel-footer">
+            <a class="btn btn-info" asp-action="Edit" asp-route-id="@Model.Id">Промени</a>
+            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.Id">Изтрий</a>
+        </div>
+    }
+    
+</section>

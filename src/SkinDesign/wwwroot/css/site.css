@@ -1,0 +1,27 @@
+﻿body {
+    background-color: lightgrey;
+}
+
+.image {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    top: 50px;
+}
+
+.home-image {
+    background-image: url(../images/COVER.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.edit-btn, .add-btn {
+    margin-top: 10px;
+}
+
+.home-icon, .phone-icon, .email-icon {
+    color:aqua;
+}
